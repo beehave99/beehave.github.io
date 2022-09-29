@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grids</title>
+
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+
+            grid-gap: 1em
+        }
+        
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+        
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae maxime quo ex reiciendis eius debitis doloremque. Libero quo eos vel nesciunt, unde, nam deserunt nihil illo expedita recusandae, maxime mollitia magni soluta esse repudiandae temporibus
+            blanditiis? Rerum molestiae, quia ipsam, consequatur, maiores voluptate cumque ullam eveniet nam nostrum delectus accusamus eos veritatis! Fuga modi quod dolores minus, cum soluta dolorum aliquam quos nesciunt optio id, repellendus odio laudantium,
+            dolor blanditiis odit aut aspernatur. Dicta obcaecati nesciunt voluptas nisi? Necessitatibus, explicabo.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae temporibus eos, doloribus tempore dolore, nulla fugit officiis minus voluptate dolorum hic voluptas quia harum et maiores iure! Natus, voluptatum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae temporibus eos, doloribus tempore dolore, nulla fugit officiis minus voluptate dolorum hic voluptas quia harum et maiores iure! Natus, voluptatum!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae temporibus eos, doloribus tempore dolore, nulla fugit officiis minus voluptate dolorum hic voluptas quia harum et maiores iure! Natus, voluptatum!
+        </div>
+    </div>
+</body>
+
+</html>

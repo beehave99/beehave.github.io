@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: gray;
+}
+
+
+/* === Global CSS === */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+.p-50 {
+    padding: 50px 0px;
+}
+
+.button {
+    background: whitesmoke;
+    color: black;
+    padding: 8px 10px;
+    border: none;
+}
+
+.button:hover {
+    background: green;
+    color: white;
+}
+
+.clr {
+    clear: both;
+}
+
+
+/* === Header === */
+
+#main-header {
+    background: whitesmoke;
+    color: blueviolet;
+}
+
+
+/* === Navbar === */
+
+.navbar {
+    display: flex;
+    padding: 18px 80px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* padding: 0; */
+}
+
+.nav-list .nav-item a {
+    margin: 0px 8px;
+    color: blueviolet;
+    font: normal 20px roboto;
+}
+
+.section-1 .container .about-us {
+    display: flex;
+    padding: 20px 26px;
+    font: normal 16px/24px Arial, sans-serif;
+}
+
+
+/* === section-11 === */
+
+.section-1 .container .about-us .col {
+    width: 80%;
+    padding: 30px 40px;
+    margin: 0px 10px;
+    border: 1px solid coral;
+    background: cornsilk;
+    border-radius: 10px;
+}
+
+.section-1 .container .about-us .col-2 {
+    border: 2px dotted red;
+    border-right: 8px solid cornflowerblue;
+    background: white;
+    padding: 30px 40px;
+    text-align: justify;
+}
+
+.section-1 .container .about-us h3 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-style: italic;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+    text-align: center;
+}
+
+
+/* === Section-2 === */
+
+.section-2 .container .row {
+    text-align: center
+}
+
+.section-2 .container .category>li {
+    margin: 10px 0;
+}
+
+.section-2 .container .form-1 {
+    border: 2px solid white;
+    width: 80%;
+    margin: auto;
+}
+
+.section-2 .container .form-1 .my-form {
+    padding: 10px 8px;
+}
+
+.section-2 .container .form-1 .my-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section-2 .container .form-1 .my-form input[type="text"] {
+    padding: 8px;
+    width: 100%;
+}
+
+.section-2 .container .form-1 .my-form .form-group {
+    margin-bottom: 10px;
+}
+
+
+/* === section-3 === */
+
+.section-3 .container .row {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 24px;
+}
+
+.section-3 .container .block {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.section-3 .container #main-block {
+    float: left;
+    width: 70%;
+}
+
+.section-3 .container #sidebar {
+    float: right;
+    width: 30%;
+    background: darkgrey;
+    color: wheat;
+    padding: 15px;
+}
+
+.section-3 .container .p-box {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    background-image: url('../img/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center top;
+}
+
+.section-3 .container .p-box h1 {
+    position: absolute;
+    top: 40px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 300px;
+}
+
+.section-3 .container .p-box .box {
+    position: relative;
+    margin: inherit;
+    width: 600px;
+    height: 200px;
+    margin-top: 30px;
+    border: 1px solid #000;
+}
+
+.section-3 .container .p-box .box h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 200px
+}
+
+.section-3 .container .fix-me {
+    position: fixed;
+    padding: 40px 40px;
+    bottom: 60px;
+    right: 30px;
+}
+
+.my-list li:first-child {
+    background: red;
+}
+
+.my-list li:last-child {
+    background: blue;
+}
+
+.my-list li:nth-child(5) {
+    background: yellow;
+}
+
+.my-list li:nth-child(even) {
+    background: violet;
+}
+
+.footnote {
+    background: blueviolet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #38414A;
+    --secondary-color: #E5461A;
+}
+
+
+/* === Global CSS === */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p-30 {
+    padding: 30px 0px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button-1 {
+    height: 38px;
+    background: var(--secondary-color);
+    border: none;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* === Header === */
+
+#main-header .navbar {
+    display: flex;
+    align-items: center;
+    padding: 0px 120px;
+    background: var(--primary-color);
+    color: #fff;
+    border-bottom: 3px solid var(--secondary-color);
+    min-height: 70px;
+}
+
+#main-header .navbar .nav-list {
+    margin-left: auto;
+    display: flex;
+}
+
+#main-header .navbar .nav-list .nav-item a {
+    text-transform: uppercase;
+    padding: 30px 20px;
+    color: white;
+}
+
+#main-header .navbar .nav-list .nav-item.active a,
+.highlight {
+    color: var(--secondary-color);
+}
+
+#main-header .navbar .nav-list .nav-item a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* === Header End === */
+
+
+/* === Main Banner === */
+
+.main-banner {
+    min-height: 400px;
+    background: url('../img/Landing-Page-Cover-Background.png') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.main-banner .container h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.main-banner .container p {
+    font-size: 20px;
+}
+
+
+/* === Main Banner End === */
+
+
+/* === New Letter === */
+
+.news-letter .container {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.news-letter .container .row {
+    display: flex;
+    align-items: center;
+}
+
+.news-letter .container .row .col {
+    margin: auto;
+}
+
+.news-letter .container .row .col .email-us input[type="email"] {
+    padding: 4px;
+    height: 38px;
+    width: 250px;
+}
+
+
+/* === New Letter End === */
+
+
+/* === Services === */
+
+.services {
+    margin-top: 20px;
+}
+
+.services .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+.services .container .row .box {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.services .container .row .box img {
+    width: 90px;
+    padding-bottom: 12px;
+}
+
+/* === Services End === */
+
+
+/* === Sidebar === */
+
+.main .container {
+    display: flex;
+}
+
+.main .container #main-call {
+    width: 65%;
+    padding-right: 40px;
+}
+
+#sidebar .quote input, #sidebar .quote textarea {
+    width: 100%;
+    padding:9px;
+}
+
+.main .container #sidebar {
+    width: 30%;
+}
+
+
+/* === Sidebar End === */
+
+
+/* === Services === */
+
+ul#services li {
+    list-style-type: none;
+    padding: 20px;
+    border: #CCCCCC solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+
+/* === Services End === */
+
+
+/* === Footer === */
+
+.site-footer {
+    text-align: center;
+    color: white;
+    padding: 24px 40px;
+    background: var(--secondary-color);
+}
+
+
+/* === Footer End === */
+
+/* === Responsive === */
+
+@media screen and (max-width: 900px) {
+    .main-banner .container > h1 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    #main-header .navbar {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    #main-header .navbar .nav-list {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+    .news-letter .container {
+        padding-top: 0;
+    }
+    .news-letter .container .row {
+        flex-direction: column;
+    }
+    .news-letter .container .row .col > h1 {
+        font-size: 18px;
+    }
+    .news-letter .container .row .col .email-us input[type="email"], .button-1 {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .services .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services .container .row .box {
+        width: 100%;
+    }
+    .services .container .row .box p,
+    h3 {
+        margin: 4px;
+    }
+
+    /* Services */
+    .main .container {
+        flex-direction: column;
+    }
+    .main .container #main-call, #sidebar {
+        padding: 0; 
+        width: 100%;
+        margin: auto;
+    }
+    .main .container #sidebar {
+        width: 100%;
+        margin: auto;
+    }
+}
