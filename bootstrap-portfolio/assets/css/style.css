@@ -23,8 +23,8 @@ a {
     text-decoration: none;
 }
 
-.p-50 {
-    padding: 50px 0;
+.p-80 {
+    padding: 80px 0;
 }
 
 
@@ -34,7 +34,7 @@ a {
 /* ======== Header Area ======== */
 
 .header-area .navbar-expand-lg {
-    padding: 30px 120px;
+    padding: 25px 120px;
 }
 
 .header-area .navbar-expand-lg .navbar-nav .nav-link {
@@ -105,9 +105,9 @@ h4 {
 .about-area .row .about-detail>h2 {
     margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     word-spacing: 12px;
-    line-height: 1.5;
+    font: normal bold 40px/70px roboto;
 }
 
 
@@ -259,6 +259,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .about-area .row .about-detail>h2 {
+        font: normal bold 30px/50px roboto;
+    }
     .service-area .service-list {
         padding: 10px;
     }
@@ -283,6 +286,9 @@ footer {
 @media only screen and (max-width: 576px) {
     .header-area .navbar-expand-lg {
         padding: 10px 10px;
+    }
+    .about-area .row .about-detail>h2 {
+        font: normal bold 20px/30px roboto;
     }
     .service-area .service-list {
         padding: 10px;
